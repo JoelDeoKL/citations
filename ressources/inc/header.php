@@ -50,7 +50,7 @@
 						<div class="right-content">
 							<ul class="list-main">
 								<li><i class="#"></i> <a href="#">Mon compte</a></li>
-								<li><a href="">S'inscrire</a></li>
+								<li><a href="index.php?kay=x-users.inscription">S'inscrire</a></li>
 								<li><i class="#"></i><a href="" data-toggle="modal" data-target="#modalPush">Se connecter</a></li>
 							</ul>
 						</div>
@@ -76,7 +76,7 @@
                     <hr>
                         <div class="right-content">
                             <ul class="list-main">
-                                <li><i class="#"></i> <a href="#">Accueil</a></li>
+                                <li><i class="#"></i> <a href="index.php">Accueil</a></li>
                                 <li><i class="#"></i> <a href="#">Amour</a></li>
                                 <li><i class="#"></i> <a href="#">Amitié</a></li>
                                 <li><i class="#"></i> <a href="#">Famille</a></li>

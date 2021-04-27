@@ -13,8 +13,8 @@
     $viewPath = "";
     $arg = ""; //represente l'argument
 
-    if(isset($_GET['y']) && !empty($_GET['y'])){
-        $getUrl = explode('-', $_GET['y']);
+    if(isset($_GET['kay']) && !empty($_GET['kay'])){
+        $getUrl = explode('-', $_GET['kay']);
         if(($getUrl[0] == "x")  && isset($getUrl[1])){
             /**
              * [0]: controller
