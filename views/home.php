@@ -42,8 +42,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                                 <div class="single-product">
                                     <div class="product-img">	
-                                        <img class="hover-img" src="{{asset('storage/' . $femme->image)}}" alt="#">
-                                        <img class="default-img" src="{{asset('images/9.png')}}" alt="#">
+                                        <h5>Ma citations</h5>
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +59,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                                 <div class="single-product">
                                     <div class="product-img">
-                                        <img class="hover-img" src="{{asset('storage/' . $enfant->image)}}" alt="#">													 
-                                        <img class="hover-img" src="{{asset('images/1.png')}}" alt="#">
+                                        <h5>Ma citations</h5>
                                     </div>
                                 </div>
                             </div>
