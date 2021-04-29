@@ -1,16 +1,16 @@
 <?php
 
-require_once("entities/Mon.php");
+require_once("entities/Users.php");
 require_once("models/x_models/MainModel.php");
 
-class Users extends MainModel{
+class UsersModel extends MainModel{
 
-    public static function insert(Article $article){
+    public static function insert(Users $users){
 
-        $query = "INSERT INTO article SET designation=?, prix_unitaire=?, prix_total=?";
+        $query = "INSERT INTO users SET pseudo=?, email=?, mdp=?";
         $sql = self::pdo()->prepare($query);
 
-        if($sql->execute([$article->getDesignation(), $article->getPrixUnitaire(), $article->getPrixTotal()])){
+        if($sql->execute([$users->getPseudo(), $users->getEmail(), $users->getMdp()])){
             return true;
         }
         return false;
