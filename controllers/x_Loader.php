@@ -66,8 +66,8 @@
                     require_once($this->modelPath.ucfirst($model).".php");
 
                     $model = new $model();
-                    $tm_Controller = new Tm_Controller();
-                    $tm_Controller->$name = $model;
+                    $x_Controller = new x_Controller();
+                    $x_Controller->$name = $model;
                 
                     return $this;
                 }else{
