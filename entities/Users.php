@@ -1,49 +1,48 @@
 <?php
 
+class Users{
 
-class Mon{
+    private $id_user;
+    private $pseudo;
+    private $email;
+    private $mdp;
 
-    private $id_article;
-    private $designation;
-    private $pix_unitaire;
-    private $prix_total;
-
-    public function __construct($id_article, $designation, $prix_unitaire, $prix_total){
-        $this->id_article = $id_article;
-        $this->designation = $designation;
-        $this->prix_unitaire = $prix_unitaire;
-        $this->prix_total = $prix_total;
+    public function __construct($id_user, $pseudo, $email, $mdp){
+        $this->id_user = $id_user;
+        $this->pseudo = $pseudo;
+        $this->email = $email;
+        $this->mdp = $mdp;
     }
 
-    public function getIdArticle() {
-        return $this->id_article;
+    public function getIdUsers() {
+        return $this->id_user;
     }
 
-    public function getDesignation() {
-        return $this->designation;
+    public function getPseudo() {
+        return $this->pseudo;
     }
 
-    public function getPrixUnitaire() {
-        return $this->prix_unitaire;
+    public function getEmail() {
+        return $this->email;
     }
 
-    public function getPrixTotal() {
-        return $this->prix_total;
+    public function getMdp() {
+        return $this->mdp;
     }
 
-    public function setIdArticle($id_article) {
-        $this->id = $id_article;
+    public function setIdUsers($id_user) {
+        $this->id_user = $id_user;
     }
 
-    public function setDesignation($designation) {
-        $this->designation = $designation;
+    public function setPseudo($pseudo) {
+        $this->pseudo = $pseudo;
     }
 
-    public function setPrixUnitaire($prix_unitaire) {
-        $this->prix_unitaire = $prix_unitaire;
+    public function setEmail($email) {
+        $this->email = $email;
     }
 
-    public function setPrixTotal($prix_total) {
-        $this->prix_total = $prix_total;
+    public function setMdp($mdp) {
+        $this->mdp = $mdp;
     }
 }
