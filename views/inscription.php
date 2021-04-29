@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <input type="submit" value="S'inscrire" class="btn btn-success float-right">
+                    <input type="submit" value="S'inscrire" class="btn btn-success float-right" name="inscrire">
                 </div>
             </form>
         </div>
