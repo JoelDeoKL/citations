@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="form-group">
-                        <label>Designation<span>*</span></label>
-                        <input type="text" name="designation" id="designation"  class="form-control">
+                        <label>Pseudo<span>*</span></label>
+                        <input type="text" name="pseudo" id="pseudo"  class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
