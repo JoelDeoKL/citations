@@ -20,7 +20,7 @@ class UsersController extends x_Controller{
             $mdp = password_hash($psw, PASSWORD_BCRYPT);
             $users = new Users(null, $pseudo, $email, $mdp);
             UsersModel::insert($users);
-            
+            header("Location: ../index.php?kay=x-users.compte");
         }else{
             header("Location: ../index.php?kay=x-users.inscription");
         }
