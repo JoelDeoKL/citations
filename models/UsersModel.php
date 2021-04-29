@@ -3,7 +3,7 @@
 require_once("entities/Mon.php");
 require_once("models/x_models/MainModel.php");
 
-class Model extends MainModel{
+class Users extends MainModel{
 
     public static function insert(Article $article){
 
