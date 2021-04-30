@@ -10,11 +10,16 @@ class UsersModel extends MainModel{
         $query = "SELECT * FROM users WHERE email=?";
         $sql = self::pdo()->prepare($query);
 
-        if($sql->execute([$users->getEmail()])){
-            if(isset($sql['email']) && isset($sql['pseudo'])){
+        $sql->execute([$users->getEmail()]);
+
+        while ($data = $sql->fetch())
+        {
+            if(isset($data['email']) && isset($data['pseudo'])){
+                //echo "true"; die();
                 return true;
             }
         }
+        //echo "false"; die();
         return false;
    }
 
@@ -26,7 +31,8 @@ class UsersModel extends MainModel{
         if($sql->execute([$users->getPseudo(), $users->getEmail(), $users->getMdp()])){
             session_start();
             $_SESSION['nom'] = $users->getPseudo();
-            header('location:../index.php?kay=x-users.compte');
+            header('location: index.php?kay=x-users.compte');
         }
+        return false;
     }
 }

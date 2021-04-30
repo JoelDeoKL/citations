@@ -22,11 +22,11 @@ class UsersController extends x_Controller{
 
         $mdp = password_hash($psw, PASSWORD_BCRYPT);
         
-        $users = new Users($pseudo, $email, $mdp);
+        $users = new Users(null, $pseudo, $email, $mdp);
         $connexion = new UsersModel();
 
         if($connexion->check($users)){
-            header('Location: ../index.php?kay=x-users.inscription');
+            header('Location: index.php?kay=x-users.inscription');
         }else{
             if ($psw == $confirm){
                 $connexion->inscription($users);
