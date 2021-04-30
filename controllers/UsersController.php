@@ -2,6 +2,10 @@
 
 class UsersController extends x_Controller{
     
+    public function compte(){
+        $this->load->view("compte");
+    }
+
     public function inscription(){
         if(isset($_POST['inscrire'])){
             $this->inscrire();
@@ -15,6 +19,8 @@ class UsersController extends x_Controller{
         $email = $_POST["email"];
         $psw = $_POST["mdp"];
         $confirm = $_POST["confirm"];
+
+        $mdp = password_hash($psw, PASSWORD_BCRYPT);
         
         $users = new Users($pseudo, $email, $mdp);
         $connexion = new UsersModel();
