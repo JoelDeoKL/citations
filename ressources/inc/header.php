@@ -49,7 +49,7 @@
 						<!-- Top Right -->
 						<div class="right-content">
 							<ul class="list-main">
-								<li><i class="#"></i> <a href="#">Mon compte</a></li>
+								<li><i class="#"></i> <a href="index.php?kay=x-users.compte">Mon compte</a></li>
 								<li><a href="index.php?kay=x-users.inscription">S'inscrire</a></li>
 								<li><i class="#"></i><a href="" data-toggle="modal" data-target="#modalPush">Se connecter</a></li>
 							</ul>

@@ -16,13 +16,17 @@ class UsersController extends x_Controller{
         $psw = $_POST["mdp"];
         $confirm = $_POST["confirm"];
         
-        if($psw == $confirm){
-            $mdp = password_hash($psw, PASSWORD_BCRYPT);
-            $users = new Users(null, $pseudo, $email, $mdp);
-            UsersModel::insert($users);
-            header("Location: ../index.php?kay=x-users.compte");
+        $users = new Users($pseudo, $email, $mdp);
+        $connexion = new UsersModel();
+
+        if($connexion->check($users)){
+            header('Location: ../index.php?kay=x-users.inscription');
         }else{
-            header("Location: ../index.php?kay=x-users.inscription");
+            if ($psw == $confirm){
+                $connexion->inscription($users);
+            }else{
+                echo 'Veuillez utiliser le meme mot de passe.';
+            }
         }
     }
 }
