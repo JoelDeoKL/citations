@@ -17,7 +17,7 @@ class UsersController extends x_Controller{
         if(isset($_POST['connexion'])){
             $this->connexion();
         }
-        $this->load->view("inscription");
+        $this->load->view("connexion");
     }
 
     public function deconnexion(){
@@ -55,11 +55,11 @@ class UsersController extends x_Controller{
 
         $mdp = password_hash($psw, PASSWORD_BCRYPT);
         
-        $users = new Users(null, $pseudo, $email, $mdp);
+        $users = new Users(null, null, $email, $mdp);
         $connexion = new UsersModel();
 
         if($connexion->check($users)){
-            $connexion->connexion($users);
+            header('Location: index.php?kay=x-users.compte');
         }else{
             header('Location: index.php?kay=x-users.connect');
         }

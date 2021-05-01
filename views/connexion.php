@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <input type="submit" value="S'inscrire" class="btn btn-success float-right" name="connexion">
+                        <input type="submit" value="Se connecter" class="btn btn-success float-right" name="connexion">
                     </div>
                 </div>
             </form>

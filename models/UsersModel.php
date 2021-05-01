@@ -7,10 +7,10 @@ class UsersModel extends MainModel{
 
     public function check(Users $users){
 
-        $query = "SELECT * FROM users WHERE email=?";
+        $query = "SELECT * FROM users WHERE email=?, mdp=?";
         $sql = self::pdo()->prepare($query);
 
-        $sql->execute([$users->getEmail()]);
+        $sql->execute([$users->getEmail(), $users->getMdp()]);
 
         while ($data = $sql->fetch())
         {

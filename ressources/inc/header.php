@@ -58,7 +58,7 @@
 									}else{
 										?>
 										<li><a href="index.php?kay=x-users.inscription">S'inscrire</a></li>
-										<li><i class="#"></i><a href="" data-toggle="modal" data-target="#modalPush">Se connecter</a></li>
+										<li><a href="index.php?kay=x-users.connect">Se connecter</a></li>
 										<?php
 									}
 								?>

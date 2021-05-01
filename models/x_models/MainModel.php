@@ -7,10 +7,6 @@
             return Connexion::getConnexion();
         }
 
-        public static function deconnect(){
-            return Connexion::getDeconnexion();
-        }
-
         /** 
          * @param string $table
          * @return mixed
