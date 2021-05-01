@@ -13,6 +13,13 @@ class UsersController extends x_Controller{
         $this->load->view("inscription");
     }
 
+    public function connect(){
+        if(isset($_POST['connexion'])){
+            $this->connexion();
+        }
+        $this->load->view("inscription");
+    }
+
     public function deconnexion(){
         $deconnexion = new UsersModel();
         $deconnexion->deconnect();
@@ -38,6 +45,23 @@ class UsersController extends x_Controller{
             }else{
                 echo 'Veuillez utiliser le meme mot de passe.';
             }
+        }
+    }
+
+    public function connexion(){
+        $this->load->model("UsersModel");
+        $email = $_POST["email"];
+        $psw = $_POST["mdp"];
+
+        $mdp = password_hash($psw, PASSWORD_BCRYPT);
+        
+        $users = new Users(null, $pseudo, $email, $mdp);
+        $connexion = new UsersModel();
+
+        if($connexion->check($users)){
+            $connexion->connexion($users);
+        }else{
+            header('Location: index.php?kay=x-users.connect');
         }
     }
 }
