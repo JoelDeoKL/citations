@@ -53,7 +53,7 @@
 								<?php
 									if(isset($_SESSION["nom"])){
 										?>
-										<li><i class="#"></i><a href="" data-toggle="modal" data-target="#modalPush">Déconnexion</a></li>
+										<li><i class="#"></i><li><a href="index.php?kay=x-users.deconnexion">Déconnexion (<?= $_SESSION["nom"];?>)</a></li>
 										<?php
 									}else{
 										?>

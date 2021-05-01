@@ -23,7 +23,7 @@ class UsersModel extends MainModel{
         return false;
    }
 
-    public static function inscription(Users $users){
+    public function inscription(Users $users){
 
         $query = "INSERT INTO users SET pseudo=?, email=?, mdp=?";
         $sql = self::pdo()->prepare($query);
@@ -34,5 +34,15 @@ class UsersModel extends MainModel{
             header('location: index.php?kay=x-users.compte');
         }
         return false;
+    }
+
+    public function deconnect(){
+        session_start();
+        if(isset($_SESSION['nom'])){
+            session_destroy();
+            header('Location: ../index.php');
+            exit();
+            return $html;
+        }
     }
 }

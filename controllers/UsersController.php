@@ -14,7 +14,8 @@ class UsersController extends x_Controller{
     }
 
     public function deconnexion(){
-        
+        $deconnexion = new UsersModel();
+        $deconnexion->deconnect();
     }
 
     public function inscrire(){
