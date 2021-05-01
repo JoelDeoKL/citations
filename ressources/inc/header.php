@@ -50,8 +50,18 @@
 						<div class="right-content">
 							<ul class="list-main">
 								<li><i class="#"></i> <a href="index.php?kay=x-users.compte">Mon compte</a></li>
-								<li><a href="index.php?kay=x-users.inscription">S'inscrire</a></li>
-								<li><i class="#"></i><a href="" data-toggle="modal" data-target="#modalPush">Se connecter</a></li>
+								<?php
+									if(isset($_SESSION["nom"])){
+										?>
+										<li><i class="#"></i><a href="" data-toggle="modal" data-target="#modalPush">Déconnexion</a></li>
+										<?php
+									}else{
+										?>
+										<li><a href="index.php?kay=x-users.inscription">S'inscrire</a></li>
+										<li><i class="#"></i><a href="" data-toggle="modal" data-target="#modalPush">Se connecter</a></li>
+										<?php
+									}
+								?>
 							</ul>
 						</div>
 						<!-- End Top Right -->
