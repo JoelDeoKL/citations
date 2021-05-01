@@ -17,5 +17,15 @@ class Connexion
         }
     }
 
+    public static function getDeconnexion(){
+        session_start();
+        if(isset($_SESSION['nom'])){
+            session_destroy();
+            header('Location: index.php');
+            exit();
+            return $html;
+        }
+    }
+
 
 }
