@@ -13,6 +13,10 @@ class UsersController extends x_Controller{
         $this->load->view("inscription");
     }
 
+    public function deconnexion(){
+        
+    }
+
     public function inscrire(){
         $this->load->model("UsersModel");
         $pseudo = $_POST["pseudo"];
