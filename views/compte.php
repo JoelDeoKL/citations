@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(empty($_SESSION['nom'])){
+        header("Location: index.php?kay=x-users.connect");
+    }
+
+?>
+
 <div class="shopping-cart section">
     <div class="container">
         <div class="row">
