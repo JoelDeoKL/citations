@@ -7,10 +7,10 @@ class UsersModel extends MainModel{
 
     public function check(Users $users){
 
-        $query = "SELECT * FROM users WHERE email=?, mdp=?";
+        $query = "SELECT * FROM users WHERE email=?";
         $sql = self::pdo()->prepare($query);
 
-        $sql->execute([$users->getEmail(), $users->getMdp()]);
+        $sql->execute([$users->getEmail()]);
 
         while ($data = $sql->fetch())
         {
@@ -36,13 +36,26 @@ class UsersModel extends MainModel{
         return false;
     }
 
-    public function deconnect(){
-        session_start();
-        if(isset($_SESSION['nom'])){
-            session_destroy();
-            header('Location: ../index.php');
-            exit();
-            return $html;
+    public function connexion(Users $users){
+
+        $query = "SELECT * FROM users WHERE email=?";
+        $sql = self::pdo()->prepare($query);
+
+        $sql->execute([$users->getEmail()]);
+
+        $data = $sql->fetch();
+
+        $pasw = $users->getMdp();
+        $pass = $data['mdp'];
+
+        //if(password_verify($pasw, $pass)){
+        if(isset($data["mdp"])){
+            session_start();
+            $_SESSION['nom'] = $data['pseudo'];
+            return true;
+        }else{
+            return false;
         }
     }
+
 }
