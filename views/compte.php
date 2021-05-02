@@ -40,7 +40,7 @@
             </div>
             <div class="col-12">
                 <br>
-                <a href="#" class="btn btn-primary">Ajouter</a>
+                <a href="index.php?kay=x-citations.ajout" class="btn btn-primary">Ajouter</a>
             </div>
         </div>
     </div>
