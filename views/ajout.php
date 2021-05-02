@@ -17,13 +17,19 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="form-group">
+                            <label>Categorie<span>*</span></label>
+                            <input type="text" id="categorie" name="categorie" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-group">
                             <label>Auteur<span>*</span></label>
                             <input type="text" name="auteur" id="auteur"  class="form-control">
                             <input type="hidden" name="ajouter_par" id="ajouter_par" value="<?= $_SESSION["nom"]?>" class="form-control">
                         </div>
                     </div>
                     <div class="col-12">
-                        <input type="submit" value="ajouter_citation" class="btn btn-success float-right" name="inscrire">
+                        <input type="submit" value="Ajouter" name="ajouter_citation" class="btn btn-success float-right" name="inscrire">
                     </div>
                 </div>
             </form>
