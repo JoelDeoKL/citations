@@ -16,5 +16,7 @@ class CitationsController extends x_Controller{
         $ajouter_par = $_POST["ajouter_par"];
 
         //var_dump($citation . " + " . $auteur . " + " . $ajouter_par);die();
+        $citations = new Users(null, $citation, $email, $mdp);
+        $connexion = new UsersModel();
     }
 }

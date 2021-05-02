@@ -4,13 +4,15 @@ class Citation{
 
     private $id_citation;
     private $citation;
+    private $categorie;
     private $auteur;
     private $ajouter_par;
     private $date_creation;
 
-    public function __construct($id_citation, $citation, $auteur, $ajouter_par, $date_creation){
+    public function __construct($id_citation, $citation, $categorie, $auteur, $ajouter_par, $date_creation){
         $this->id_citation = $id_citation;
         $this->citation = $citation;
+        $this->categorie = $categorie;
         $this->auteur = $auteur;
         $this->ajouter_par = $ajouter_par;
         $this->date_creation = $date_creation;
@@ -22,6 +24,10 @@ class Citation{
 
     public function getCitation() {
         return $this->citation;
+    }
+
+    public function getCategorie() {
+        return $this->categorie;
     }
 
     public function getAuteur() {
@@ -42,6 +48,10 @@ class Citation{
 
     public function setCitation($citation) {
         $this->citation = $citation;
+    }
+
+    public function setCateorie($categorie) {
+        $this->categorie = $categorie;
     }
 
     public function setAuteur($auteur) {
