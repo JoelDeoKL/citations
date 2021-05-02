@@ -1,5 +1,4 @@
 <?php
-    session_start();
     if(empty($_SESSION['nom'])){
         header("Location: index.php?kay=x-users.connect");
     }
@@ -13,23 +12,27 @@
                 <table class="table shopping-summery">
                     <thead>
                         <tr class="main-hading">
-                            <th>PRODUIT</th>
-                            <th>NOM</th>
-                            <th class="text-center">PRIX ACHAT</th>
-                            <th class="text-center">QUANTITE</th>
-                            <th class="text-center">PRIX UNITAIRE</th>
-                            <th class="text-center">REDUCTION</th>
-                            <th class="text-center"><i class="ti-eye"></i></th>
-                            <th class="text-center"><i class="ti-trash remove-icon"></i></th>
+                            <th class="text-center" width="40%">Citations</th>
+                            <th width="20%">Auteur</th>
+                            <th width="20%">Date de création</th>
+                            <th width="10%">Voir</th>
+                            <th width="10%">Supprimer</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- @foreach($articles as $article) -->
                             <tr>
-                                <td class="product-des" data-title="Description">
+                                <td class="product-des" data-title="Citations">
                                     <p class="product-name"><a href="#">Citations</a></p>
-                                    <p class="product-des">Date creer</p>
                                 </td>
+                                <td class="product-des" data-title="Auteur">
+                                    <p class="product-name"><a href="#">Auteur</a></p>
+                                </td>
+                                <td class="product-des" data-title="Date">
+                                    <p class="product-name"><a href="#">Date</a></p>
+                                </td>
+                                <td class="action" data-title="View"><a href="#"><i class="ti-eye"></i></a></td>
+                                <td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
                             </tr>
                         <!-- @endforeach -->
                     </tbody>
