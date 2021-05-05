@@ -23,10 +23,10 @@ class CitationsController extends x_Controller{
         $citations = new Citations(null, $citation, $categorie, $auteur, $ajouter_par, null);
         $donnees = new CitationsModel();
 
-        if($donnees->enregistrer($citations)){
-            $citation = $donnees->afficher($citations);
-
-            $this->load->view("compte", compact("citation"));
+        if($data->enregistrer($citations)){
+            $donnees = $data->afficher($citations);
+            
+            $this->load->view("compte", compact("donnees"));
         }
     }
 }

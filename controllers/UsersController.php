@@ -6,10 +6,11 @@ require_once("models/CitationsModel.php");
 class UsersController extends x_Controller{
     
     public function compte(){
-        $citations = new Citations(null, null, null, null, null, null);
+        $pseudo = $_SESSION["nom"];
+        $citations = new Citations(null, null, null, null, $pseudo, null);
         $donnees = new CitationsModel();
         $donnees->afficher($citations);
-        $this->load->view("compte");
+        $this->load->view("compte", compact("donnees"));
     }
 
     public function inscription(){

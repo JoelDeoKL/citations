@@ -21,6 +21,12 @@ class CitationsModel extends MainModel{
 
         $sql->execute([$citations->getAjouter_par()]);
 
-        return $sql;
+        $donnees = array();
+        while ($data = $sql->fetch())
+        {
+            array_push($donnees, $data);
+        }
+        //var_dump($donnees);die();
+        return $donnees;
     }
 }
