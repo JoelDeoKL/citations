@@ -1,6 +1,6 @@
 <?php
 
-class Citation{
+class Citations{
 
     private $id_citation;
     private $citation;

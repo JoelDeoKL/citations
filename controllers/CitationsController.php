@@ -1,5 +1,9 @@
 <?php
 
+require_once("entities/Citations.php");
+require_once("models/CitationsModel.php");
+require_once("models/x_models/MainModel.php");
+
 class CitationsController extends x_Controller{
 
     public function ajout(){
@@ -16,7 +20,13 @@ class CitationsController extends x_Controller{
         $ajouter_par = $_POST["ajouter_par"];
 
         //var_dump($citation . " + " . $auteur . " + " . $ajouter_par);die();
-        $citations = new Users(null, $citation, $email, $mdp);
-        $connexion = new UsersModel();
+        $citations = new Citations(null, $citation, $categorie, $auteur, $ajouter_par, null);
+        $donnees = new CitationsModel();
+
+        if($donnees->enregistrer($citations)){
+            $citation = $donnees->afficher($citations);
+
+            $this->load->view("compte", compact("citation"));
+        }
     }
 }

@@ -6,7 +6,7 @@ require_once("models/x_models/MainModel.php");
 class UsersModel extends MainModel{
 
     public function check(Users $users){
-
+        
         $query = "SELECT * FROM users WHERE email=?";
         $sql = self::pdo()->prepare($query);
 

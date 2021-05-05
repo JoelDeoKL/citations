@@ -1,8 +1,14 @@
 <?php
 
+require_once("entities/Citations.php");
+require_once("models/CitationsModel.php");
+
 class UsersController extends x_Controller{
     
     public function compte(){
+        $citations = new Citations(null, null, null, null, null, null);
+        $donnees = new CitationsModel();
+        $donnees->afficher($citations);
         $this->load->view("compte");
     }
 
