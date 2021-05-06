@@ -21,11 +21,10 @@ class CitationsController extends x_Controller{
 
         //var_dump($citation . " + " . $auteur . " + " . $ajouter_par);die();
         $citations = new Citations(null, $citation, $categorie, $auteur, $ajouter_par, null);
-        $donnees = new CitationsModel();
+        $data = new CitationsModel();
 
         if($data->enregistrer($citations)){
             $donnees = $data->afficher($citations);
-            
             $this->load->view("compte", compact("donnees"));
         }
     }

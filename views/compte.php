@@ -21,25 +21,28 @@
                     </thead>
                     <tbody>
                         <?php
-                            foreach ($donnees as $citation)
-                            {
-                                
-                                ?>
-                                <tr>
-                                    <td class="product-des" data-title="Citations">
-                                        <p class="product-name"><a href="#">Citations</a></p>
-                                    </td>
-                                    <td class="product-des" data-title="Auteur">
-                                        <p class="product-name"><a href="#">Auteur</a></p>
-                                    </td>
-                                    <td class="product-des" data-title="Date">
-                                        <p class="product-name"><a href="#">Date</a></p>
-                                    </td>
-                                    <td class="action" data-title="View"><a href="#"><i class="ti-eye"></i></a></td>
-                                    <td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
-                                </tr>
-                                <?php
+                            if(!empty($donnees)){
+                                foreach (array($donnees) as $citation)
+                                {
+                                    
+                                    ?>
+                                    <tr>
+                                        <td class="product-des" data-title="Citations">
+                                            <p class="product-name"><a href="#"><?= $donnees["citation"]?></a></p>
+                                        </td>
+                                        <td class="product-des" data-title="Auteur">
+                                            <p class="product-name"><a href="#"><?= $donnees["auteur"]?></a></p>
+                                        </td>
+                                        <td class="product-des" data-title="Date">
+                                            <p class="product-name"><a href="#"><?= $donnees["date_creation"]?></a></p>
+                                        </td>
+                                        <td class="action" data-title="View"><a href="#"><i class="ti-eye"></i></a></td>
+                                        <td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
+                                    </tr>
+                                    <?php
+                                }
                             }
+                            
                         ?>
                     </tbody>
                 </table>  

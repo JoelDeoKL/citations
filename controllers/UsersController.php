@@ -8,8 +8,9 @@ class UsersController extends x_Controller{
     public function compte(){
         $pseudo = $_SESSION["nom"];
         $citations = new Citations(null, null, null, null, $pseudo, null);
-        $donnees = new CitationsModel();
-        $donnees->afficher($citations);
+        $data = new CitationsModel();
+        
+        $donnees = $data->afficher($citations);
         $this->load->view("compte", compact("donnees"));
     }
 

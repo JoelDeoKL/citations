@@ -20,13 +20,8 @@ class CitationsModel extends MainModel{
         $sql = self::pdo()->prepare($query);
 
         $sql->execute([$citations->getAjouter_par()]);
-
-        $donnees = array();
-        while ($data = $sql->fetch())
-        {
-            array_push($donnees, $data);
-        }
-        //var_dump($donnees);die();
+        $donnees = $sql->fetch();
+        
         return $donnees;
     }
 }
