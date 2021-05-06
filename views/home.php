@@ -60,6 +60,9 @@
                                 <div class="single-product">
                                     <div class="product-img">
                                         <h5>Ma citations</h5>
+                                        <?php
+                                            var_dump($donnees);
+                                        ?>
                                     </div>
                                 </div>
                             </div>
