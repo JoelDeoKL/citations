@@ -21,7 +21,15 @@ class CitationsModel extends MainModel{
 
         $sql->execute([$citations->getAjouter_par()]);
         $donnees = $sql->fetch();
-        
+        return $donnees;
+    }
+
+    public function affichage(Citations $citations){
+        $query = "SELECT * FROM citations";
+        $sql = self::pdo()->prepare($query);
+
+        $sql->execute();
+        $donnees = $sql->fetch();
         return $donnees;
     }
 }

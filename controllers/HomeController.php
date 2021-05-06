@@ -11,7 +11,7 @@ class HomeController extends x_Controller{
         $citations = new Citations(null, null, null, null, null, null);
         $data = new CitationsModel();
         
-        $donnees = $data->afficher($citations);
+        $donnees = $data->affichage($citations);
         $this->load->view("home", compact("donnees"));
     }
 }
