@@ -18,7 +18,16 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="form-group">
                             <label>Categorie<span>*</span></label>
-                            <input type="text" id="categorie" name="categorie" class="form-control">
+                            <select class="custom-select" name="categorie" id="categorie">
+                                <option value="1">Amour</option>
+                                <option value="2">Amitié</option>
+                                <option value="3">Famille</option>
+                                <option value="4">Bonheur</option>
+                                <option value="5">Himmes & Femmes</option>
+                                <option value="6">Travail</option>
+                                <option value="7">Temps qui passe</option>
+                                <option value="8">Animaux</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
