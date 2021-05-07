@@ -10,27 +10,27 @@ class HomeController extends x_Controller{
 
         $citations1 = new Citations(null, null, "1", null, null, null);
         $data = new CitationsModel();
-        $amour = $data->affichage($citations1);
+        $amours = $data->affichage($citations1);
 
         $citations2 = new Citations(null, null, "2", null, null, null);
         $data2 = new CitationsModel();
-        $amitie = $data2->affichage($citations2);
+        $amities = $data2->affichage($citations2);
 
         $citations3 = new Citations(null, null, "3", null, null, null);
         $data3 = new CitationsModel();
-        $famille = $data3->affichage($citations3);
+        $familles = $data3->affichage($citations3);
 
         $citations4 = new Citations(null, null, "4", null, null, null);
         $data4 = new CitationsModel();
-        $bonheur = $data4->affichage($citations4);
+        $bonheurs = $data4->affichage($citations4);
 
         $citations5 = new Citations(null, null, "5", null, null, null);
         $data5 = new CitationsModel();
-        $hf = $data5->affichage($citations5);
+        $hfs = $data5->affichage($citations5);
 
         $citations6 = new Citations(null, null, "6", null, null, null);
         $data6 = new CitationsModel();
-        $travail = $data6->affichage($citations6);
+        $travails = $data6->affichage($citations6);
 
         $citations7 = new Citations(null, null, "7", null, null, null);
         $data7 = new CitationsModel();
@@ -40,6 +40,6 @@ class HomeController extends x_Controller{
         $data8 = new CitationsModel();
         $animaux = $data8->affichage($citations8);
 
-        $this->load->view("home", compact("amour", "amitie", "famille", "bonheur", "hf", "travail", "temps", "animaux"));
+        $this->load->view("home", compact("amours", "amities", "familles", "bonheurs", "hfs", "travails", "temps", "animaux"));
     }
 }

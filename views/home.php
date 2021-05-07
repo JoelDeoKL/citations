@@ -22,7 +22,7 @@
                 <div class="tab-single">
                     <div class="row">
                         <?php
-                            if(!empty($donnees)){
+                            if(!empty($amour)){
                                 foreach (array($donnees) as $citation)
                                 {?>
                                     <div class="col-lg-12 col-md-6 col-xl-12 col-12">
