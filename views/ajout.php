@@ -23,7 +23,7 @@
                                 <option value="2">Amitié</option>
                                 <option value="3">Famille</option>
                                 <option value="4">Bonheur</option>
-                                <option value="5">Himmes & Femmes</option>
+                                <option value="5">Hommes & Femmes</option>
                                 <option value="6">Travail</option>
                                 <option value="7">Temps qui passe</option>
                                 <option value="8">Animaux</option>
