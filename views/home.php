@@ -17,9 +17,67 @@
             </div>
         </div>
         <div class="tab-content" id="myTabContent">
-            <?php
-                var_dump($donnees["citation"]);
-            ?>
+            <!-- Start Single Tab -->
+            <div class="tab-pane fade show active" id="recent" role="tabpanel">
+                <div class="tab-single">
+                    <div class="row">
+                        <?php
+                            if(!empty($donnees)){
+                                foreach (array($donnees) as $citation)
+                                {?>
+                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                        <div class="feature-1-content">
+                                            <h2>Personalize Learning</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
+                                            <p><a href="#" class="btn btn-primary px-4 rounded-0">Learn More</a></p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                                }
+                            }
+                        ?>
+                                    
+                        <!-- @endforeach -->
+                    </div>
+                </div>
+            </div>
+            <!--/ End Single Tab -->
+            <!-- Start Single Tab -->
+            <div class="tab-pane fade" id="populaire" role="tabpanel">
+                <div class="tab-single">
+                    <div class="row">
+                        <!-- @foreach($femmes as $femme) -->
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                <div class="single-product">
+                                    <div class="product-img">	
+                                        <h5>Ma citations</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- @endforeach -->
+                    </div>
+                </div>
+            </div>
+            <!--/ End Single Tab -->
+            <!-- Start Single Tab -->
+            <div class="tab-pane fade" id="aleatoire" role="tabpanel">
+                <div class="tab-single">
+                    <div class="row">
+                        <!-- @foreach($enfants as $enfant) -->
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                <div class="single-product">
+                                    <div class="product-img">
+                                        <h5>Ma citations</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- @endforeach -->
+                    </div>
+                </div>
+            </div>
+            <!--/ End Single Tab -->
         </div>
     </div>
 </div>

@@ -10,20 +10,32 @@
 	<!-- Title Tag  -->
     <title>Citations</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="public/images/logo.png">
-	<link rel="stylesheet" href="public/css/bootstrap.css">	
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+	
+	<link rel="stylesheet" href="public/css/bootstrap.css">
+	<!-- Magnific Popup -->
+    <link rel="stylesheet" href="public/css/magnific-popup.min.css">
+	<!-- Font Awesome -->
     <link rel="stylesheet" href="public/css/font-awesome.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="public/css/jquery.fancybox.min.css">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="public/css/themify-icons.css">
+	<!-- Nice Select CSS -->
+    <link rel="stylesheet" href="public/css/niceselect.css">
+	<!-- Animate CSS -->
+    <link rel="stylesheet" href="public/css/animate.css">
+	<!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="public/css/flex-slider.min.css">
+	<!-- Owl Carousel -->
+    <link rel="stylesheet" href="public/css/owl-carousel.css">
+	<!-- Slicknav -->
+    <link rel="stylesheet" href="public/css/slicknav.min.css">
+	
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="public/css/reset.css">
 	<link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="public/css/responsive.css">
-    <link rel="stylesheet" href="public/css/magnific-popup.min.css')}}">
-	<link rel="stylesheet" href="public/css/jquery.fancybox.min.css')}}">
-    <link rel="stylesheet" href="public/css/themify-icons.css">
-    <link rel="stylesheet" href="public/css/niceselect.css">
-    <link rel="stylesheet" href="public/css/animate.css">
-    <link rel="stylesheet" href="public/css/flex-slider.min.css">
-    <link rel="stylesheet" href="public/css/owl-carousel.css">
-    <link rel="stylesheet" href="public/css/slicknav.min.css">
-	<link rel="stylesheet" href="public/css/reset.css">
 
 	
 	
