@@ -25,11 +25,11 @@ class CitationsModel extends MainModel{
     }
 
     public function affichage(Citations $citations){
-        $query = "SELECT * FROM citations";
+        $query = "SELECT * FROM citations WHERE categorie=?";
         $sql = self::pdo()->prepare($query);
 
         $sql->execute();
-        $donnees = $sql->fetch();
+        $donnees = $sql->fetch([$citations->getCategorie()]);
         return $donnees;
     }
 }

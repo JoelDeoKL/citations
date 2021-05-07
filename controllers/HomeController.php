@@ -8,7 +8,7 @@ class HomeController extends x_Controller{
 
     public function index(){
 
-        $citations = new Citations(null, null, null, null, null, null);
+        $citations = new Citations(null, null, "1", null, null, null);
         $data = new CitationsModel();
         
         $donnees = $data->affichage($citations);
