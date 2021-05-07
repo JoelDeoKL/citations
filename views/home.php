@@ -31,7 +31,15 @@
                                                 <em><?= $amour["date_creation"]?></em><br>
                                                 <strong><em><?= $amour["citation"]?></em></strong><br>
                                                 <span>Auteur : <strong><em><?= $amour["auteur"]?></em></strong></span>
-                                                <span> (ajoutée par : <?= $amour["ajouter_par"]?>)</span>
+                                                <span> (ajoutée par : <?= $amour["ajouter_par"]?>)</span><br>
+                                                <span>Categorie : <em><?php 
+                                                        if($amour["categorie"] == 1){
+                                                            echo "Amour";
+                                                        }elseif($amour["categorie"] == 2){
+                                                            echo "Amitié";
+                                                        }
+                                                    ?></em>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>

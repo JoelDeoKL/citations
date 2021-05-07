@@ -12,7 +12,7 @@
                 <table class="table shopping-summery">
                     <thead>
                         <tr class="main-hading">
-                            <th class="text-center" width="40%">Citations</th>
+                            <th width="40%">Citations <br> <span>(categorie)</span></th>
                             <th width="20%">Auteur</th>
                             <th width="20%">Date de création</th>
                             <th width="10%">Voir</th>
@@ -24,11 +24,20 @@
                             if(!empty($donnees)){
                                 foreach (array($donnees) as $citation)
                                 {
-                                    
                                     ?>
                                     <tr>
                                         <td class="product-des" data-title="Citations">
-                                            <p class="product-name"><a href="#"><?= $donnees["citation"]?></a></p>
+                                            <p class="product-name"><a href="#"><?= $donnees["citation"]?></a><br>
+                                                <span>Dans la categorie :
+                                                    <em><?php 
+                                                        if($donnees["categorie"] == 1){
+                                                            echo "Amour";
+                                                        }elseif($donnees["categorie"] == 2){
+                                                            echo "Amitié";
+                                                        }
+                                                    ?></em>
+                                                </span>
+                                            </p>
                                         </td>
                                         <td class="product-des" data-title="Auteur">
                                             <p class="product-name"><a href="#"><?= $donnees["auteur"]?></a></p>
