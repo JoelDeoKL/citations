@@ -25,15 +25,16 @@
                             if(!empty($donnees)){
                                 foreach (array($donnees) as $citation)
                                 {?>
-                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                        <div class="feature-1-content">
-                                            <h2>Personalize Learning</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
-                                            <p><a href="#" class="btn btn-primary px-4 rounded-0">Learn More</a></p>
-                                        </div>
+                                    <div class="col-lg-12 col-md-6 col-xl-12 col-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <em><?= $citation["date_creation"]?></em><br>
+                                                <strong><em><?= $citation["citation"]?></em></strong><br>
+                                                <span>Auteur : <strong><em><?= $citation["auteur"]?></em></strong></span>
+                                                <span> (ajoutée par : <?= $citation["ajouter_par"]?>)</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 <?php
                                 }
                             }
