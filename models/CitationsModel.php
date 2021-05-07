@@ -28,8 +28,8 @@ class CitationsModel extends MainModel{
         $query = "SELECT * FROM citations WHERE categorie=?";
         $sql = self::pdo()->prepare($query);
 
-        $sql->execute();
-        $donnees = $sql->fetch([$citations->getCategorie()]);
+        $sql->execute([$citations->getCategorie()]);
+        $donnees = $sql->fetch();
         return $donnees;
     }
 }

@@ -22,16 +22,16 @@
                 <div class="tab-single">
                     <div class="row">
                         <?php
-                            if(!empty($amour)){
-                                foreach (array($donnees) as $citation)
+                            if(!empty($amours)){
+                                foreach (array($amours) as $amour)
                                 {?>
                                     <div class="col-lg-12 col-md-6 col-xl-12 col-12">
                                         <div class="single-product">
                                             <div class="product-img">
-                                                <em><?= $citation["date_creation"]?></em><br>
-                                                <strong><em><?= $citation["citation"]?></em></strong><br>
-                                                <span>Auteur : <strong><em><?= $citation["auteur"]?></em></strong></span>
-                                                <span> (ajoutée par : <?= $citation["ajouter_par"]?>)</span>
+                                                <em><?= $amour["date_creation"]?></em><br>
+                                                <strong><em><?= $amour["citation"]?></em></strong><br>
+                                                <span>Auteur : <strong><em><?= $amour["auteur"]?></em></strong></span>
+                                                <span> (ajoutée par : <?= $amour["ajouter_par"]?>)</span>
                                             </div>
                                         </div>
                                     </div>
@@ -39,8 +39,6 @@
                                 }
                             }
                         ?>
-                                    
-                        <!-- @endforeach -->
                     </div>
                 </div>
             </div>
