@@ -36,7 +36,7 @@ class CitationsModel extends MainModel{
     }
 
     public function affiche(Citations $citations){
-        $query = "SELECT * FROM citations";
+        $query = "SELECT * FROM citations LIMIT 10";
         $sql = self::pdo()->prepare($query);
 
         $sql->execute();
