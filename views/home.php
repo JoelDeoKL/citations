@@ -21,7 +21,7 @@
             <div class="tab-pane fade show active" id="recent" role="tabpanel">
                 <div class="tab-single">
                     <div class="row">
-                        <?php var_dump($tous);
+                        <?php
                             if(!empty($tous)){
                                 foreach ($tous as $all)
                                 {?>
@@ -37,11 +37,30 @@
                                                             echo "Amour";
                                                         }elseif($all["categorie"] == 2){
                                                             echo "Amitié";
+                                                        }elseif($all["categorie"] == 2){
+                                                            echo "Amitié";
+                                                        }elseif($all["categorie"] == 2){
+                                                            echo "Amitié";
+                                                        }elseif($all["categorie"] == 3){
+                                                            echo "Famille";
+                                                        }elseif($all["categorie"] == 4){
+                                                            echo "Bonheur";
+                                                        }elseif($all["categorie"] == 5){
+                                                            echo "Hommes & Femmes";
+                                                        }elseif($all["categorie"] == 6){
+                                                            echo "Travail";
+                                                        }elseif($all["categorie"] == 7){
+                                                            echo "Temps qui passe";
+                                                        }elseif($all["categorie"] == 8){
+                                                            echo "Animaux";
+                                                        }else{
+                                                            echo "Pas de categorie";
                                                         }
                                                     ?></em>
                                                 </span>
                                             </div>
                                         </div>
+                                        <hr>
                                     </div>
                                 <?php
                                 }
