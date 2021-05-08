@@ -42,7 +42,7 @@ class HomeController extends x_Controller{
 
         $citations9 = new Citations(null, null, null, null, null, null);
         $data9 = new CitationsModel();
-        $tous = $data9->afficher($citations9);
+        $tous = $data9->affiche($citations9);
 
         $this->load->view("home", compact("amours", "amities", "familles", "bonheurs", "hfs", "travails", "temps", "animaux", "tous"));
     }
