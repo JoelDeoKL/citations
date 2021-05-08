@@ -16,11 +16,13 @@ class CitationsModel extends MainModel{
     }
 
     public function afficher(Citations $citations){
+        
         $query = "SELECT * FROM citations WHERE ajouter_par=?";
         $sql = self::pdo()->prepare($query);
 
         $sql->execute([$citations->getAjouter_par()]);
-        $donnees = $sql->fetch();
+        $donnees = $sql->fetchAll();
+        
         return $donnees;
     }
 
@@ -29,7 +31,7 @@ class CitationsModel extends MainModel{
         $sql = self::pdo()->prepare($query);
 
         $sql->execute([$citations->getCategorie()]);
-        $donnees = $sql->fetch();
+        $donnees = $sql->fetchAll();
         return $donnees;
     }
 }

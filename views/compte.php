@@ -22,17 +22,17 @@
                     <tbody>
                         <?php
                             if(!empty($donnees)){
-                                foreach (array($donnees) as $citation)
+                                foreach ($donnees as $citation)
                                 {
                                     ?>
                                     <tr>
                                         <td class="product-des" data-title="Citations">
-                                            <p class="product-name"><a href="#"><?= $donnees["citation"]?></a><br>
+                                            <p class="product-name"><a href="#"><?= $citation["citation"]?></a><br>
                                                 <span>Dans la categorie :
                                                     <em><?php 
-                                                        if($donnees["categorie"] == 1){
+                                                        if($citation["categorie"] == 1){
                                                             echo "Amour";
-                                                        }elseif($donnees["categorie"] == 2){
+                                                        }elseif($citation["categorie"] == 2){
                                                             echo "Amitié";
                                                         }
                                                     ?></em>
@@ -40,10 +40,10 @@
                                             </p>
                                         </td>
                                         <td class="product-des" data-title="Auteur">
-                                            <p class="product-name"><a href="#"><?= $donnees["auteur"]?></a></p>
+                                            <p class="product-name"><a href="#"><?= $citation["auteur"]?></a></p>
                                         </td>
                                         <td class="product-des" data-title="Date">
-                                            <p class="product-name"><a href="#"><?= $donnees["date_creation"]?></a></p>
+                                            <p class="product-name"><a href="#"><?= $citation["date_creation"]?></a></p>
                                         </td>
                                         <td class="action" data-title="View"><a href="#"><i class="ti-eye"></i></a></td>
                                         <td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>

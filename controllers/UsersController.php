@@ -11,6 +11,7 @@ class UsersController extends x_Controller{
         $data = new CitationsModel();
         
         $donnees = $data->afficher($citations);
+        
         $this->load->view("compte", compact("donnees"));
     }
 
