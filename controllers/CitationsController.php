@@ -28,4 +28,68 @@ class CitationsController extends x_Controller{
             $this->load->view("compte", compact("donnees"));
         }
     }
+
+    public function amour(){
+        $citations = new Citations(null, null, "1", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
+
+    public function amitie(){
+        $citations = new Citations(null, null, "2", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
+
+    public function famille(){
+        $citations = new Citations(null, null, "3", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
+
+    public function bonheur(){
+        $citations = new Citations(null, null, "4", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
+
+    public function homme_femme(){
+        $citations = new Citations(null, null, "5", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
+
+    public function travail(){
+        $citations = new Citations(null, null, "6", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
+
+    public function temps(){
+        $citations = new Citations(null, null, "7", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
+
+    public function animaux(){
+        $citations = new Citations(null, null, "8", null, null, null);
+        $data = new CitationsModel();
+        $resultats = $data->affichage($citations);
+
+        $this->load->view("citations", compact("resultats"));
+    }
 }
