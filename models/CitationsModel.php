@@ -34,4 +34,13 @@ class CitationsModel extends MainModel{
         $donnees = $sql->fetchAll();
         return $donnees;
     }
+
+    public function affiche(Citations $citations){
+        $query = "SELECT * FROM citations";
+        $sql = self::pdo()->prepare($query);
+
+        $sql->execute();
+        $donnees = $sql->fetchAll();
+        return $donnees;
+    }
 }

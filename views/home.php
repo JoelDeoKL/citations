@@ -21,21 +21,21 @@
             <div class="tab-pane fade show active" id="recent" role="tabpanel">
                 <div class="tab-single">
                     <div class="row">
-                        <?php
-                            if(!empty($amours)){
-                                foreach (array($amours) as $amour)
+                        <?php var_dump($tous);
+                            if(!empty($tous)){
+                                foreach ($tous as $all)
                                 {?>
                                     <div class="col-lg-12 col-md-6 col-xl-12 col-12">
                                         <div class="single-product">
                                             <div class="product-img">
-                                                <em><?= $amour["date_creation"]?></em><br>
-                                                <strong><em><?= $amour["citation"]?></em></strong><br>
-                                                <span>Auteur : <strong><em><?= $amour["auteur"]?></em></strong></span>
-                                                <span> (ajoutée par : <?= $amour["ajouter_par"]?>)</span><br>
+                                                <em><?= $all["date_creation"]?></em><br>
+                                                <strong><em><?= $all["citation"]?></em></strong><br>
+                                                <span>Auteur : <strong><em><?= $all["auteur"]?></em></strong></span>
+                                                <span> (ajoutée par : <?= $all["ajouter_par"]?>)</span><br>
                                                 <span>Categorie : <em><?php 
-                                                        if($amour["categorie"] == 1){
+                                                        if($all["categorie"] == 1){
                                                             echo "Amour";
-                                                        }elseif($amour["categorie"] == 2){
+                                                        }elseif($all["categorie"] == 2){
                                                             echo "Amitié";
                                                         }
                                                     ?></em>
