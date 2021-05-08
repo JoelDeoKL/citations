@@ -87,14 +87,14 @@
                         <div class="right-content">
                             <ul class="list-main">
                                 <li><i class="#"></i> <a href="index.php">Accueil</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.amour">Amour</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.amitie">Amitié</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.famille">Famille</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.bonheur">Bonheur</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.hommes_femmes">Hommes & Femmes</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.travail">Travail</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.temps">Temps qui passe</a></li>
-                                <li><i class="#"></i> <a href="index.php?kay=x-citation.animaux">Animaux</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.amour">Amour</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.amitie">Amitié</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.famille">Famille</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.bonheur">Bonheur</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.hommes_femmes">Hommes & Femmes</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.travail">Travail</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.temps">Temps qui passe</a></li>
+                                <li><i class="#"></i> <a href="index.php?kay=x-citations.animaux">Animaux</a></li>
                             </ul>
                         </div>
 					</div>
