@@ -49,10 +49,10 @@
 						<!-- Top Right -->
 						<div class="right-content">
 							<ul class="list-main">
-								<li><i class="#"></i> <a href="index.php?kay=x-users.compte">Mon compte</a></li>
 								<?php
 									if(isset($_SESSION["nom"])){
 										?>
+										<li><i class="#"></i> <a href="index.php?kay=x-users.compte">Mon compte</a></li>
 										<li><i class="#"></i><li><a href="index.php?kay=x-users.deconnexion">Déconnexion (<?= $_SESSION["nom"];?>)</a></li>
 										<?php
 									}else{

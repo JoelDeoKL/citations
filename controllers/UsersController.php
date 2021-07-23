@@ -2,6 +2,8 @@
 
 require_once("entities/Citations.php");
 require_once("models/CitationsModel.php");
+require_once("entities/Users.php");
+require_once("models/UsersModel.php");
 
 class UsersController extends x_Controller{
     

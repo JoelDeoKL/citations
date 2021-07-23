@@ -34,6 +34,7 @@ class UsersModel extends MainModel{
             header('location: index.php?kay=x-users.compte');
         }
         return false;
+
     }
 
     public function connexion(Users $users){
@@ -50,7 +51,6 @@ class UsersModel extends MainModel{
 
         //if(password_verify($pasw, $pass)){
         if(isset($data["mdp"])){
-            session_start();
             $_SESSION['nom'] = $data['pseudo'];
             return true;
         }else{

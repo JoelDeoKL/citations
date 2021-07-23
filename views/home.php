@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-12">
-            <h5><em>Nos Citations</em> est un dictionnaire qui repgroupe plus de 4999 citations classés par themes et par auteurs.</h5>
+            <h5><em>Nos Citations</em> est un dictionnaire qui regroupe plus de 4969 citations classés par themes et par auteurs.</h5>
         </div>
         <div class="col-12">
 			<div class="product-info">
