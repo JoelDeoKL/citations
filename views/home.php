@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-12">
-            <h5><em>Nos Citations</em> est un dictionnaire qui regroupe plus de 4969 citations classés par themes et par auteurs.</h5>
+            <h5><em>Nos Citations</em> est un dictionnaire qui repgroupe plus de 4999 citations classés par themes et par auteurs.</h5>
         </div>
         <div class="col-12">
 			<div class="product-info">
@@ -22,36 +22,36 @@
                 <div class="tab-single">
                     <div class="row">
                         <?php
-                            if(!empty($tous)){
-                                foreach ($tous as $all)
+                            if(!empty($resultats)){
+                                foreach ($resultats as $resultat)
                                 {?>
                                     <div class="col-lg-12 col-md-6 col-xl-12 col-12">
                                         <div class="single-product">
                                             <div class="product-img">
-                                                <em><?= $all["date_creation"]?></em><br>
-                                                <strong><em><?= $all["citation"]?></em></strong><br>
-                                                <span>Auteur : <strong><em><?= $all["auteur"]?></em></strong></span>
-                                                <span> (ajoutée par : <?= $all["ajouter_par"]?>)</span><br>
-                                                <span>Categorie : <em><?php 
-                                                        if($all["categorie"] == 1){
+                                                <em><?= $resultat["date_creation"]?></em><br>
+                                                <strong><em><?= $resultat["citation"]?></em></strong><br>
+                                                <span>Auteur : <strong><em><?= $resultat["auteur"]?></em></strong></span>
+                                                <span> (ajoutée par : <?= $resultat["ajouter_par"]?>)</span><br>
+                                                <span>Categorie : <em><?php
+                                                        if($resultat["categorie"] == 1){
                                                             echo "Amour";
-                                                        }elseif($all["categorie"] == 2){
+                                                        }elseif($resultat["categorie"] == 2){
                                                             echo "Amitié";
-                                                        }elseif($all["categorie"] == 2){
+                                                        }elseif($resultat["categorie"] == 2){
                                                             echo "Amitié";
-                                                        }elseif($all["categorie"] == 2){
+                                                        }elseif($resultat["categorie"] == 2){
                                                             echo "Amitié";
-                                                        }elseif($all["categorie"] == 3){
+                                                        }elseif($resultat["categorie"] == 3){
                                                             echo "Famille";
-                                                        }elseif($all["categorie"] == 4){
+                                                        }elseif($resultat["categorie"] == 4){
                                                             echo "Bonheur";
-                                                        }elseif($all["categorie"] == 5){
+                                                        }elseif($resultat["categorie"] == 5){
                                                             echo "Hommes & Femmes";
-                                                        }elseif($all["categorie"] == 6){
+                                                        }elseif($resultat["categorie"] == 6){
                                                             echo "Travail";
-                                                        }elseif($all["categorie"] == 7){
+                                                        }elseif($resultat["categorie"] == 7){
                                                             echo "Temps qui passe";
-                                                        }elseif($all["categorie"] == 8){
+                                                        }elseif($resultat["categorie"] == 8){
                                                             echo "Animaux";
                                                         }else{
                                                             echo "Pas de categorie";
@@ -77,7 +77,7 @@
                         <!-- @foreach($femmes as $femme) -->
                             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                                 <div class="single-product">
-                                    <div class="product-img">	
+                                    <div class="product-img">
                                         <h5>Ma citations</h5>
                                     </div>
                                 </div>

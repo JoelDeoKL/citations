@@ -10,8 +10,8 @@ class HomeController extends x_Controller{
 
         $citations = new Citations(null, null, null, null, null, null);
         $data = new CitationsModel();
-        $tous = $data->affiche($citations);
+        $resultats = $data->affiche($citations);
 
-        $this->load->view("home", compact("tous"));
+        $this->load->view("home", compact("resultats"));
     }
 }
