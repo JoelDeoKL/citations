@@ -1,7 +1,7 @@
 <?php
     require_once('config/config.php');
     require_once("models/x_models/Connexion.php");
-    // //require_once('config/tm_helpers.php');
+    //require_once('config/tm_helpers.php');
     require_once('controllers/AutoloadController.php');
 
     AutoloadController::register();
